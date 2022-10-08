@@ -1,0 +1,23 @@
+{% extends 'meetups/base/base.html' %}
+{% load static %} 
+
+{%block title%}all meetups{%endblock%}
+{%block site_css%}
+    <link rel="stylesheet" href="{% static 'meetups/style/base.css' %}">
+{%endblock%}
+{%block main_heading%}
+    We got greate Meetups coming up!
+    {%endblock%}
+{%block header_content%}
+    <p>Find the one that best fit you</p>
+{%endblock%}
+{%block body%}
+  <section>
+        <h2>Upcoming Meetups</h2>
+        <ol>
+            {% for meetups_item in meetups%}
+                {% include 'meetups/includes/m_item.html' with title=meetups_item.title image=meetups_item.image.url location='Plateau State' slug=meetups_item.slug%}
+            {% endfor%}
+        </ol>
+    </section>
+{%endblock%}

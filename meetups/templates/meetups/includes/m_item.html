@@ -1,0 +1,18 @@
+{%load static%}
+<li class="m_item">
+    <article>
+        <div class="m_summary">
+            <div class = "m_image">
+                <img src="{{image}}" alt="{{title}}">
+            </div>
+            <div class = "m_details">
+                <h3>{{title}}</h3>
+                <adrress>{{location}}</address>
+            </div>
+        </div>
+    </article>
+    <div class = "m_action">
+        <a href = "{% url 'meetups-detail' slug%}" class = "btn">More Detail</a>
+
+    </div>
+</li>

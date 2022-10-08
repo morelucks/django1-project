@@ -1,0 +1,36 @@
+body{
+    background-color: whitesmoke;
+}
+#confirmation{
+    background-color:  rgb(31, 31, 85);
+    padding: 20px;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+}
+#confirmation p a{
+    color: greenyellow;
+    text-decoration: none;
+}
+#confirmation p a:hover{
+ font-size: 17px;
+ color: white;
+ background-color: rgb(96, 139, 14);
+ border-radius: 5px;
+}
+#continue{
+    /* background-color: antiquewhite; */
+    text-align: center;
+
+}
+#cp{
+    font-size: 22px;
+
+}
+#continue p a{
+    background-color: rgb(51, 51, 92);
+    color: white;
+    margin: 0;
+    width: 150px;
+    margin-left: 200px;
+}
